@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
-import Main from './components/main';
-import './App.css';
 import {Provider} from 'react-redux';
-import {store, persistor} from './store';
+//PersistGate is used for the LocalStorage
 import {PersistGate} from 'redux-persist/integration/react';
+//we use the persistor with the store
+import {store, persistor} from '../store';
+import Main from './main';
+import Header from './header'
+import '../App.css';
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
+      {/** persistGate is used for sync the provider with the localStorage */}
         <PersistGate loading={null} persistor={persistor}>
           <div className="App">
-            <h2> Lista de tarefas</h2>
+            <Header />
             <Main/>
           </div>
         </PersistGate>
