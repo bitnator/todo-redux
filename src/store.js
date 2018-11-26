@@ -11,10 +11,10 @@ const persistConfig = {
     storage,
 };
 //connects the configs whith the reducers
-const pReducer = persistReducer(persistConfig, reducers);
+const pReducer = persistReducer(persistConfig, reducers)
 //creates the store with the result
-const store = createStore(pReducer);
+const store = createStore(pReducer)
 //creates the persistor using the store
-const persistor = persistStore(store);
+const persistor = persistStore(store)
 
-export {store, persistor};
+export {store, persistor}

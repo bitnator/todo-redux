@@ -83,14 +83,14 @@ class Main extends Component {
     render() {
         
         return (
-            <div>
+            <div className="body">
              <Form change={this.change} inputValue={this.state.inputValue}
               save={this.save} filterTodos={this.filterTodos} />
 
              <List propsList={this.props.listaProps} changeTodo={this.changeTodo} 
              prepareToEdit={this.prepareToEdit} removeTodo={this.props.removeTodo} 
              status1={this.state.status1} status2={this.state.status2} />
-            </div>
+             </div>
         )
         //I prefered to use two components for the return of the render() 
         // one for the form and another for the todo listings 
@@ -105,7 +105,7 @@ const mapStateToProps = store => ({
 //the next function is used to activate the functions of the actions
 //I opted to use each name of the actions for learning pourposes
 const mapDispatchToProps = dispatch => 
-        bindActionCreators({addTodo, removeTodo, editTodo, checkTodo}, dispatch);
+        bindActionCreators({addTodo, removeTodo, editTodo, checkTodo}, dispatch)
 
 //the connect function is the connection of the store, reducers and containers
-export default connect(mapStateToProps, mapDispatchToProps)(Main);
+export default connect(mapStateToProps, mapDispatchToProps)(Main)

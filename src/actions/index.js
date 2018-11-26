@@ -1,4 +1,4 @@
-let counter = 0;
+let counter = 0
 
 export const addTodo = description => ({
     type: 'ADD_TODO', 

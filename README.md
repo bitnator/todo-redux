@@ -1,11 +1,21 @@
+## Project Local Todo List (react and redux)
+
+This project is a todo app made using the create-react-app <br>
+This app uses lovalstorage and redux-persist to persist the data into the storage<br>
+I use arrays and not use objects like the other examples of the redux to
+keep the simplicity for learning and for my personal reference<br>
+I use bootstrap 4.1, jquery too <br>
+created by @masterbranco form learning pourpose and for a interview test<br>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
-
+### `npm start` or yarn start
+You can user the yarn start<br>
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
